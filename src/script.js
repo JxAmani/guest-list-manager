@@ -101,8 +101,8 @@ function addGuest() {
 
     renderGuestList();
 
-    guestNameInput.value = '';
-    showMessage(`'${name}' added to the list!`, 'success');
+    guestNameInput.value = '';//empty string
+    showMessage(`'${name}' added to the list!`, 'success');//message when user adds a name to the code
 }
 
 function removeGuest(idToRemove) {
