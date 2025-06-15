@@ -71,7 +71,7 @@ button {
 }
 
 .message-area.show {
-    display: block;/*To show message area*/
+    display: block;
 }
 
 .guest-list {
@@ -79,7 +79,7 @@ button {
     padding: 1opx;
     margin: 10px;
 }
-
+/* li created in js code */
 .guest-item {
     display: flex;/*make everything side by side */
     align-items: center;
@@ -93,16 +93,16 @@ button {
     gap: 10px;
 }
 
-/*span that display's the guest name*/
+/*for displaying guest name*/
 .guest-name {
     font-size: 18px;
     color: darkgray;
     font-weight: 600;
     min-width: 120px;/*min visual space for the name*/
 }
-
+/*div*/
 .guest-actions {
-    display: flex;
+    display: flex;/*side by side*/
     gap: 8px;
     flex-wrap: wrap;
 }
@@ -127,7 +127,7 @@ button {
     background-color: blue;
 }
 
-
+/* show rsvp status */
 .rsvp-status {
     font-size: 14px;
     font-weight: 600;
