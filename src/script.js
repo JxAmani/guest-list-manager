@@ -59,7 +59,7 @@ function renderGuestList() {
         if (guest.addedTime) {
             const timeSpan = document.createElement('span');// created a span
             timeSpan.classList.add('added-time');//gave the span a class name called added-time
-            const date = new Date(guest.addedTime);
+            const date = new Date(guest.addedTime);//display time
             timeSpan.textContent = `Added: ${date.toLocaleDateString()} ${date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
             listItem.appendChild(timeSpan);
         }
@@ -79,12 +79,12 @@ function renderGuestList() {
 function addGuest() {
     const name = guestNameInput.value.trim();
 
-    if (name === '') {
+    if (name === '') {//dont put a name
         showMessage('Please enter a guest name.', 'error');
         return;
     }
 
-    if (guests.length >= MAX_GUESTS) {
+    if (guests.length >= MAX_GUESTS) { //if no. of guest exceed 10
         showMessage(`Guest list is full! (Max ${MAX_GUESTS} guests)`, 'warning');
         guestNameInput.value = '';
         return;
@@ -93,8 +93,8 @@ function addGuest() {
     const newGuest = {
         id: generateUniqueId(),
         name: name,
-        attending: true,
-        addedTime: Date.now()
+        attending: true,// Setting default rsvp to attending
+        addedTime: Date.now()//Timestamp
     };
 
     guests.push(newGuest);
