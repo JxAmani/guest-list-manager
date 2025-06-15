@@ -35,13 +35,13 @@ function renderGuestList() {
 
         const rsvpButton = document.createElement('button');//created a button
         rsvpButton.classList.add('rsvp-btn');//gave the button a class name called rsvp-btn
-        rsvpButton.textContent = guest.attending ? 'Mark Not Attending' : 'Mark Attending';//changes its text based on gust.attending
-        rsvpButton.title = 'Click to toggle RSVP status';
+        rsvpButton.textContent = guest.attending ? 'Mark Not Attending' : 'Mark Attending';//changes its text based on guest.attending
+        rsvpButton.title = 'Click to toggle RSVP status';//meaning to change status to either mark attending or mark not attending
 
         const rsvpStatusSpan = document.createElement('span');// created a span
         rsvpStatusSpan.classList.add('rsvp-status');//gave the span a class name called rsvp-status
-        rsvpStatusSpan.textContent = guest.attending ? 'Attending' : 'Not Attending';
-        rsvpStatusSpan.classList.add(guest.attending ? 'attending' : 'not-attending');
+        rsvpStatusSpan.textContent = guest.attending ? 'Attending' : 'Not Attending';//changes its text based on guest.attending
+        rsvpStatusSpan.classList.add(guest.attending ? 'attending' : 'not-attending');//meaning to change status to either attending or not attending
 
         rsvpButton.addEventListener('click', () => toggleRSVP(guest.id));
 
