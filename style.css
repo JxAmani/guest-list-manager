@@ -1,0 +1,156 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url(https://i.pinimg.com/736x/a3/6e/4f/a36e4f98f523b3474b80752b009a1a04.jpg);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    border: solid 1px #ccc;
+    background-color: white;
+    width: 80%;
+    height: 550px;
+    margin-left: 120px;
+    margin-top: 120px;
+    margin-right: 50px;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.guest-input-section {
+    color: blueviolet;
+    margin-left: 175px;
+    font-size: x-large;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#input {
+    width: 435px;
+    height: auto;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+button {
+    padding: 12px 20px;
+    width: 135px;
+    height: 46px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 34px;
+    margin: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*where user will get feedback*/
+.message-area {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: lightyellow;
+    color: #856404;/*dark yellow*/
+    text-align: center;
+    display: none;/*Hides the message area*/
+}
+
+.message-area.show {
+    display: block;/*To show message area*/
+}
+
+.guest-list {
+    list-style: none;/*removes ul bullet points*/
+    padding: 1opx;
+    margin: 10px;
+}
+
+.guest-item {
+    display: flex;/*make everything side by side */
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*span that display's the guest name*/
+.guest-name {
+    font-size: 18px;
+    color: darkgray;
+    font-weight: 600;
+    min-width: 120px;/*min visual space for the name*/
+}
+
+.guest-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.guest-actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.remove-btn {
+    background-color: red;
+}
+
+.rsvp-btn {
+    background-color: grey;
+}
+
+
+.edit-btn {
+    background-color: blue;
+}
+
+
+.rsvp-status {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;/*prevents text from wrapping*/
+}
+
+.rsvp-status.attending {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.rsvp-status.not-attending {
+    background-color: #f8d7da;/* pale-red*/
+    color: darkred;
+}
+
+.added-time {
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+    width: 100%;
+    text-align: right;
+}
+

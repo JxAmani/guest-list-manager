@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Guest List Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+        <h1>Event Guest List Manager</h1>
+        <div class="guest-input-section">
+            <label for="input" id="label">Guest Name:</label>
+            <input type="text" id="input" placeholder="Enter guest name" required>
+            <button id="addGuestButton" type="submit">Add a guest</button>
+        </div>
+        <div id="messageArea" class="message-area"></div>
+        <ul id="guestList" class="guest-list"> 
+        </ul>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>
