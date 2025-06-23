@@ -111,7 +111,7 @@ function removeGuest(idToRemove) {
     guests = guests.filter(guest => guest.id !== idToRemove);//.filter unwanted items
 
     renderGuestList();
-    if (removedGuestName) {
+    if (removedGuestName) {//message bar
         showMessage(`'${removedGuestName}' removed from the list.`, 'info');//user removes name
     }
 }
@@ -153,7 +153,7 @@ addGuestButton.addEventListener('click', addGuest);
 
 // Clicking 'Enter' key press in the guest name input.
 guestNameInput.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === 'enter') {
         addGuest();//calling function
     }
 });
