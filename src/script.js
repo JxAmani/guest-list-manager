@@ -18,7 +18,7 @@ function showMessage(message, type = 'warning') {//default type is warning
 function generateUniqueId() {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
-
+//each guest is in their own bar with their own mods
 function renderGuestList() {
     guestListUL.innerHTML = '';//clear previous list
 
