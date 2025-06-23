@@ -6,7 +6,7 @@ const messageArea = document.getElementById('messageArea');
 let guests = [];// mutable array
 
 const MAX_GUESTS = 10;
-
+//Dispearing message bar that informs you what you're doing
 function showMessage(message, type = 'warning') {//default type is warning
     messageArea.textContent = message;// inserting text
     messageArea.className = `message-area show ${type}`;//in css its styled as a class
@@ -77,7 +77,7 @@ function renderGuestList() {
 }
 
 function addGuest() {
-    const name = guestNameInput.value.trim();
+    const name = guestNameInput.value.trim();//remove whitespace of the user
 
     if (name === '') {//dont put a name
         showMessage('Please enter a guest name.', 'error');
@@ -97,18 +97,18 @@ function addGuest() {
         addedTime: Date.now()//Timestamp
     };
 
-    guests.push(newGuest);
+    guests.push(newGuest);//to be done for every guest
 
     renderGuestList();
 
     guestNameInput.value = '';//empty string
-    showMessage(`'${name}' added to the list!`, 'success');//message when user adds a name to the code
+    showMessage(`'${name}' added to the list!`, 'success');//message when user adds a name to the input bar
 }
 
 /*Removes a guest from the list. idToRemove - ID of the guest to remove.*/
 function removeGuest(idToRemove) {
     const removedGuestName = guests.find(guest => guest.id === idToRemove)?.name;//id and id to remove same thing
-    guests = guests.filter(guest => guest.id !== idToRemove);
+    guests = guests.filter(guest => guest.id !== idToRemove);//.filter unwanted items
 
     renderGuestList();
     if (removedGuestName) {
@@ -116,7 +116,7 @@ function removeGuest(idToRemove) {
     }
 }
 
-/* Toggles the RSVP status for a guest. idToToggle - ID of the guest whose RSVP status to toggle.*/
+/*(Toggle-change) Toggles the RSVP status for a guest. idToToggle - ID of the guest whose RSVP status to toggle.*/
 function toggleRSVP(idToToggle) {
     guests = guests.map(guest =>
         guest.id === idToToggle ? { ...guest, attending: !guest.attending } : guest
