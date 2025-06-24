@@ -1,4 +1,4 @@
-# 🎉 Event Guest List Manager
+Event Guest List Manager
 
 The **Event Guest List Manager** is a simple, browser-based app designed to help you organize guests for any event — from small parties to professional gatherings.
 
@@ -6,9 +6,8 @@ With a clean and intuitive interface, you can quickly add guest names, edit them
 
 The app is fast, lightweight, and runs entirely in the browser — no accounts, no databases, just an easy way to keep your guest list under control.
 
----
 
-## 🧭 How to Use
+ How to Use
 
 1. Enter a guest's name and click "Add a guest".
 2. Use the buttons next to each guest to:
@@ -17,17 +16,15 @@ The app is fast, lightweight, and runs entirely in the browser — no accounts, 
    - Remove them from the list
 3. You can manage up to 10 guests at a time.
 
----
 
-## 🛠 Tech Stack
+Tech Stack
 
 - HTML + CSS
 - JavaScript 
 - Font Awesome Icons
 - Google Fonts
 
----
 
-**Made by Jeremy Amani**  
-📧 Akannaming007@gmail.com  
-📞 07123456789
+
+Made by Jeremy Amani**  
+
