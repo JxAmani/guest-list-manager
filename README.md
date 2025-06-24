@@ -22,7 +22,7 @@ The app is fast, lightweight, and runs entirely in the browser — no accounts, 
 ## 🛠 Tech Stack
 
 - HTML + CSS
-- JavaScript (Vanilla)
+- JavaScript 
 - Font Awesome Icons
 - Google Fonts
 
