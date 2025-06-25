@@ -1,5 +1,5 @@
 Event Guest List Manager
-
+https://jxamani.github.io/guest-list-manager/
 The **Event Guest List Manager** is a simple, browser-based app designed to help you organize guests for any event — from small parties to professional gatherings.
 
 With a clean and intuitive interface, you can quickly add guest names, edit them, track attendance (RSVP), and remove guests if needed. Each guest is displayed with their name, RSVP status, and the time they were added. A real-time message bar provides helpful feedback as you manage the list.
